@@ -23,3 +23,28 @@ eg: .parent{
 
   Another property I want to discuss here is "z-index", 
     this property is when we have overlapping elements, I can set the value of z-index to -1 sending the corresponding element behind the other element.
+
+* now we the difference between static and relative, in a nutshell
+
+static: Elements are positioned based on the normal flow of the document. The properties like top, right, bottom, and left and z-index have no effect.
+relative: Elements are positioned relative to their normal position in the document flow. You can use the top, right, bottom, and left properties to adjust its position.
+
+we wont ever necessarily require to style using property static however understanding the property static helps us to understand the effect of other position properties.
+
+NOTE: something i have mentioned here is "the flow of document", you can chatgpt it with respect of html and css and it will explain the whole thing beautifully. take note
+it is very helpful in understand the whole html and css!
+
+alright so i have an example where to use position relative instead of positon absolute, what absolute does is it removes the element from the flow of document whereas
+what relative does is it keeps the element in the flow of document while allowing it to make use of properties such as top, left, bottom, and right.
+>>  https://www.youtube.com/watch?v=MxEtxo_AaZ4
+in this video at time stamp 5:29 the instructor diffentiates between the use of absolute and relative in use case.
+what he does is use relaive postion to bump its element to the right instead of margin-left(as he had used percentage thus using margin left would shrink the image/element)
+
+
+FIXED: 
+much like absolute, it takes the element out of the normal flow of document, but it differs so that when we scroll the page the it remains fixed on the screen as it is 
+relative to the html document.
+
+STICKY: 
+much like relative has no effect in the beginning but when we give it a top property say 0px it will move with the scroll as it hits the top of the page upon scroll.
+The value of top can be altered.
