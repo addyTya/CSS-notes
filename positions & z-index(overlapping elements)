@@ -46,5 +46,7 @@ much like absolute, it takes the element out of the normal flow of document, but
 relative to the html document.
 
 STICKY: 
-much like relative has no effect in the beginning but when we give it a top property say 0px it will move with the scroll as it hits the top of the page upon scroll.
+much like relative has no effect in the beginning but when we give it a top property say 0px it will move with the scroll as it hits the top of the viewport upon scroll.
 The value of top can be altered.
+
+viewport is the visible area of the webpage.
