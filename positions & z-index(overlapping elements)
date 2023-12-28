@@ -21,6 +21,8 @@ eg: .parent{
 
         this code will let the child container to be on the top right corner of the parent container;
 
+one this to keep in mind is when we set an element to relative it takes it top right botton left property relative to it's original position in the flow of document.
+the original position serves as the reference point for further alterations in the position of the element.
   Another property I want to discuss here is "z-index", 
     this property is when we have overlapping elements, I can set the value of z-index to -1 sending the corresponding element behind the other element.
 
