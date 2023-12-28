@@ -1,0 +1,25 @@
+To learn position we must know the heirarchical order the HTML follows.
+
+when we have a container and we wish to position it, the container seeks the position property of the parent container. suppose,
+we have a container inside a container,
+<div class="parent">
+  <div class="child"> my item </div>
+</div>
+
+the container parent has a position relative,
+the postion of child will be relative to the position of the parent,
+if the positon of the child is absolute then in that case it will assume the 'parent' to be the root container and the position of the 'child' will be absolute to the maximum dimensions(height,width) of 'parent'
+
+eg: .parent{
+        positon: relative:
+        }
+    .child{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        }
+
+        this code will let the child container to be on the top right corner of the parent container;
+
+  Another property I want to discuss here is "z-index", 
+    this property is when we have overlapping elements, I can set the value of z-index to -1 sending the corresponding element behind the other element.
