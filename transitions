@@ -1,0 +1,17 @@
+use key word transition.
+
+when we use transition we need to specify values for, transition-property, duration, timing-function and delay.
+property is the keyword for any attribute such as color, background, width, transform etc/
+duration is the time over which the effect will occur 
+timning fucntion defines the type of transition you want 
+and delay is the time before the transition starts
+
+note: transition comes in effect when there is a chanage in value of the specified property 
+
+p{
+  width:50px;
+  transition: width 1s;
+}
+p:hover{width:100px;}
+
+on hover the value will change and the transition will be brought about!
